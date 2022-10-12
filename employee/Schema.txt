@@ -1,0 +1,63 @@
+TimeSheeTController
+===================================
+localhost:8080/api/timeSheet/getTimeSheet/1---------->get
+
+localhost:8080/api/timeSheet/update/1 -----------> post(have to change in sts to put)
+{
+            
+    "date": "21-06-2022",
+    "loginTime": "09:35:24",
+    "logoutTime": "19:33:52",
+    "description": "Did Somthing"
+}
+
+localhost:8080/api/timeSheet/getAllTimeSheet/1 ------------>getAllBy EmployeeID
+
+
+localhost:8080/api/timeSheet/add ------> post
+
+{
+    "date":"27-06-2022",
+    "loginTime":"09:35:24",
+    "logoutTime":"19:33:52",
+    "description":"Did Nothing",
+    "employee":{
+        "employeeId":2
+    }
+}
+
+
+EmployeeController
+==============================
+localhost:8080/api/employee/login ============== post
+
+
+{
+    "email":"anil@gmail.com",
+    "password":"qwerty"
+}
+
+
+localhost:8080/api/employee/add ================ post
+
+{
+    "employeeName":"haskjfhsa",
+    "email":"sawant@gmail.com",
+    "password":"qwerty",
+    "role":"ROLE_EMPLOYEE",
+    "employeeAddress":"DASDJS",
+    "phoneNo":7864531486798
+}
+
+
+localhost:8080/api/employee/update/2 ============ put
+
+
+{
+    "employeeName":"haskjfhsa",
+    "email":"sawant@gmail.com",
+    "password":"qwerty",
+    "role":"ROLE_EMPLOYEE",
+    "employeeAddress":"DASDJS",
+    "phoneNo":7864531486798
+}
